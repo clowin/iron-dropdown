@@ -50,11 +50,13 @@ method is called on the element.
 
       #contentWrapper ::slotted(*) {
         overflow: auto;
+	@apply --iron-dropdown-slotted;
       }
 
       #contentWrapper.animating ::slotted(*) {
         overflow: hidden;
         pointer-events: none;
+	@apply --iron-dropdown-animating-slotted;
       }
     </style>
 
